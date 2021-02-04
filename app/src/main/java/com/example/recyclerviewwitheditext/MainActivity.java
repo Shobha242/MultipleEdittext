@@ -39,14 +39,8 @@ public class MainActivity extends AppCompatActivity {
         submitLL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] allllistStr = paymentAdapter.getAlllistStr();
-                String listvalue = Arrays.toString(allllistStr);
-                listvalue = listvalue.replaceAll("\\[", "").replaceAll("\\]", "");
-                listvalue = listvalue.replace(",", "~").replaceAll("", "");
-                Log.d("listvalue__", listvalue);
-                String[] allllistStr1 = paymentAdapter.getAlllistStr1();
-                StringBuffer result = new StringBuffer();
-                String pos = "";
+                //String[] allllistStr = paymentAdapter.getAlllistStr();
+
                 try {
                     for (int i = 0; i < arrayList.size(); i++) {
                         View view = rv_requestProblems.getChildAt(i);
